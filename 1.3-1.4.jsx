@@ -45,21 +45,19 @@ const Header = (props) => {
 }
 
 const Content = (props) => {
-  console.log(props[2].exercises)
   return (
     <div>
-      <Part part={props[0].name} exercise={props[0].exercises} />
-      <Part part={props[1].name} exercise={props[1].exercises} />
-      <Part part={props[2].name} exercise={props[2].exercises} />
+      <Part part={props.parts[0].name} exercise={props.parts[0].exercises} />
+      <Part part={props.parts[1].name} exercise={props.parts[1].exercises} />
+      <Part part={props.parts[2].name} exercise={props.parts[2].exercises} />
     </div>
   )
 }
 
 const Total = (props) => {
-  let number = exercises
   return (
     <div>
-      <p>Number of exercises {props[0].exercises + props[1].exercises + props[2].exercises}</p>
+      <p>Number of exercises {props.parts[0].exercises + props.parts[1].exercises + props.parts[2].exercises}</p>
     </div>
   )
 }
