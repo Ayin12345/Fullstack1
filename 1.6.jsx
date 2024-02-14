@@ -9,6 +9,7 @@ const Statistics = (props) => {
     </div>
   )
 }
+
 const Button = ({ handleClick, text }) => (
   <button onClick={handleClick}>
     {text}
